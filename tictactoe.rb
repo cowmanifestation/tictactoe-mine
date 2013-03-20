@@ -1,13 +1,8 @@
 require './board'
-# is a separate Player class really necessary?
-# maybe when we get to AI
-require './player'
 
 class Game
   def initialize
     @board = Board.new
-    @player_x = Player.new('x')
-    @player_o = Player.new('o')
   end
 
   def board
